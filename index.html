@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of [Your Name], BSIT student">
+  <title>[Your Name] | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">[Your Initials]</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <img src="images/profile.jpg" alt="Photo of [Your Name]">
+      <div>
+        <h1>Hi, I'm [Your Name]</h1>
+        <p>[Program and year level] student at [School]. I am interested in [your interests].</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>[Add your own]</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="project-list" class="grid">
+        <!-- JavaScript loads projects from data/projects.json -->
+      </div>
+    </section>
+
+    <section id="repos">
+      <h2>Latest GitHub Repositories</h2>
+      <ul id="repo-list">
+        <!-- JavaScript loads these from the GitHub API -->
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="msg">Message</label>
+        <textarea id="msg" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+        <p id="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 [Your Name]. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

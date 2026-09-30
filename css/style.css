@@ -1,0 +1,73 @@
+:root {
+  --primary: #1f4e79;
+  --accent: #f5a623;
+  --bg: #f7f9fc;
+  --text: #222;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Navigation: Flexbox */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: var(--primary);
+}
+nav a { color: white; text-decoration: none; }
+nav ul { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; }
+.logo { font-weight: bold; font-size: 1.3rem; }
+
+section { padding: 50px 8%; }
+h2 { color: var(--primary); border-bottom: 3px solid var(--accent); display: inline-block; }
+
+/* Hero: Flexbox */
+.hero { display: flex; align-items: center; gap: 40px; }
+.hero img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; }
+
+/* Skills as tags */
+.skills { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
+.skills li { background: var(--primary); color: white; padding: 6px 14px; border-radius: 20px; }
+
+/* Projects: CSS Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-5px); }
+
+/* Contact form */
+form { display: flex; flex-direction: column; gap: 8px; max-width: 500px; }
+input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; font: inherit; }
+button { background: var(--accent); border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px; }
+
+footer { text-align: center; padding: 20px; background: var(--primary); color: white; }
+
+/* Tablet */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .hero { flex-direction: column; text-align: center; }
+  .grid { grid-template-columns: 1fr; }
+  nav { flex-direction: column; gap: 10px; }
+}

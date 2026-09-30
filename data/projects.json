@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Mini Student Portal",
+    "description": "Student search page with a Node.js REST API.",
+    "tech": ["HTML", "CSS", "JavaScript", "Express"],
+    "link": "https://github.com/jayveepcl/student-portal"
+  },
+  {
+    "title": "Grade Calculator",
+    "description": "Computes final grades from quizzes and exams.",
+    "tech": ["Java"],
+    "link": ""
+  }
+]

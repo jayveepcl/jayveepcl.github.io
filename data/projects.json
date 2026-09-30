@@ -1,20 +1,20 @@
 [
   {
-    "title": "Research 1",
-    "description": "Student search page with a Node.js REST API.",
-    "tech": ["HTML", "CSS", "JavaScript", "Express"],
-    "link": "https://github.com/jayveepcl/student-portal"
+    "title": "Optimizing Hyperparameters for Enhanced Satsuma Fruit Disease Detection",
+    "description": "Published at Journal of Information Systems Engineering & Management",
+    "tech": ["April 2025"],
+    "link": "https://10.52783/jisem.v10i33s.5552"
   },
   {
-    "title": "Research 2",
-    "description": "Computes final grades from quizzes and exams.",
-    "tech": ["Java"],
-    "link": ""
+    "title": "Integrating Machine Learning-based Fruit Disease Detection Algorithm for Satsuma Growers’ Knowledge, Practices, and Technology Adoption",
+    "description": "Published at Nanotechnology Perceptions",
+    "tech": ["May 2024"],
+    "link": "https://10.62441/nano-ntp.v20iS4.3"
   },
   {
-    "title": "Research 3",
-    "description": "Computes final grades from quizzes and exams.",
-    "tech": ["Java"],
-    "link": ""
+    "title": "ProCoMon: A Web-based Project Procurement Management Plan (PPMP) Consolidation and Monitoring System for Nueva Vizcaya State University",
+    "description": "Presented at the International Conference on Exploring Colossal Technological Advances of the 21 Century in Science, Engineering, and Technology(ICECTACSET-2023) Published at Journal of Electrical Systems",
+    "tech": ["April 2024"],
+    "link": "https://10.52783/jes.2168"
   }
 ]

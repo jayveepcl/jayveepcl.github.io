@@ -1,4 +1,4 @@
-const GITHUB_USER = "yourusername";
+const GITHUB_USER = "jayveepcl";
 
 // 1. Load projects from the JSON file
 async function loadProjects() {
@@ -13,8 +13,8 @@ async function loadProjects() {
       card.innerHTML = `
         <h3>${project.title}</h3>
         <p>${project.description}</p>
-        <p><strong>Tech:</strong> ${project.tech.join(", ")}</p>
-        ${project.link ? `<a href="${project.link}" target="_blank">Link</a>` : ""}`;
+        <p><strong>Date Published:</strong> ${project.tech.join(", ")}</p>
+        ${project.link ? `<a href="${project.link}" target="_blank">DOI</a>` : ""}`;
       list.appendChild(card);
     });
   } catch (error) {

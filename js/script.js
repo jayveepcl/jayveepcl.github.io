@@ -25,7 +25,7 @@ async function loadProjects() {
 // 2. Load the 5 most recently updated repositories from the GitHub REST API
 async function loadRepos() {
   const list = document.getElementById("repo-list");
-  const url = 'https://api.github.com/users/${jayveepcl}/repos?sort=updated&per_page=5';
+  const url = 'https://api.github.com/users/$jayveepcl/repos?sort=updated&per_page=5';
   try {
     const response = await fetch(url);          // HTTP GET request
     if (!response.ok) throw new Error(response.status);

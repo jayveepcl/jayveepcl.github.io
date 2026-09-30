@@ -14,7 +14,7 @@ async function loadProjects() {
         <h3>${project.title}</h3>
         <p>${project.description}</p>
         <p><strong>Tech:</strong> ${project.tech.join(", ")}</p>
-        ${project.link ? `<a href="${project.link}" target="_blank">View project</a>` : ""}`;
+        ${project.link ? `<a href="${project.link}" target="_blank">Link</a>` : ""}`;
       list.appendChild(card);
     });
   } catch (error) {
@@ -25,7 +25,7 @@ async function loadProjects() {
 // 2. Load the 5 most recently updated repositories from the GitHub REST API
 async function loadRepos() {
   const list = document.getElementById("repo-list");
-  const url = `https://api.github.com/users/${jayveepcl}/repos?sort=updated&per_page=5`;
+  const url = 'https://api.github.com/users/${jayveepcl}/repos?sort=updated&per_page=5';
   try {
     const response = await fetch(url);          // HTTP GET request
     if (!response.ok) throw new Error(response.status);
